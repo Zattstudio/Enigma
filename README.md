@@ -4,8 +4,8 @@ A simple implementation of the enigma cipher machine in C++
 ## Introduction
 The Enigma machine was used by the Germans in Word War II (WW2) to encrypt their secret messages.  Enigma was invented by the German engineer Arthur Scherbius. It works by using an electrical circuit with simple buttons for the keys and lamps for indicators. It also uses a set of three rotors for changing the encryption algorithm every time a key is pressed.
 ### This implementation
-This implementation is not focused on fast encryption of words / sentences. It rather uses single commands to enter key after key. You can also check the setting of a rotor at every time. This gives you full control over what happens and how it worked.
-Note that as in the original Enigma machine, this program will ignore spaces and capitalized letters. This implementation if the Enigma machine is written in C++. 
+This implementation is not focused on fast encryption of words / sentences. It rather uses single commands to enter key after key. You can also check the setting of a rotor at every time. This gives you full control over what happens and how it works.
+Note that as in the original Enigma machine, this program will ignore spaces and capitalised letters. This implementation is the Enigma machine is written in C++. 
 Enjoy :smiley:
 
 ## Build
