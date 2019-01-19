@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zatt/Documents/Git/Enigma/src/Command.cc
+Command.h
+/home/zatt/Documents/Git/Enigma/src/Command.h
+
+/home/zatt/Documents/Git/Enigma/src/Command.h
+string
+-
+iostream
+-
+
+/home/zatt/Documents/Git/Enigma/src/Format.h
+
+/home/zatt/Documents/Git/Enigma/src/Plugboard.h
+
+/home/zatt/Documents/Git/Enigma/src/main.cc
+iostream
+-
+string
+-
+Format.h
+/home/zatt/Documents/Git/Enigma/src/Format.h
+Plugboard.h
+/home/zatt/Documents/Git/Enigma/src/Plugboard.h
+Command.h
+/home/zatt/Documents/Git/Enigma/src/Command.h
+
