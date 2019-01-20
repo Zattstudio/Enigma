@@ -1,8 +1,10 @@
 #ifndef _COMMAND_H_
 #define _COMMAND_H_
 
+#include <vector>
 #include <string>
 #include <iostream>
+#include <sstream>
 //This file holds the enumerated type for commands
 
 class Command{
@@ -10,6 +12,7 @@ class Command{
         Command(std::string input);
         ~Command();
         void parseCommand();
+        int getArg(unsigned index);
         enum Commands
         {
             Command_Insert_Key,
@@ -22,7 +25,7 @@ class Command{
         Commands getCommand();
     private:
         bool argumentNeeded();
-        char m_Arg;
+        std::vector<std::string> m_Tokens;
         std::string m_Base;
 };
 
