@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Enigma.dir/src/main.cc.o"
   "CMakeFiles/Enigma.dir/src/Command.cc.o"
+  "CMakeFiles/Enigma.dir/src/Rotor.cc.o"
+  "CMakeFiles/Enigma.dir/src/RotorSystem.cc.o"
+  "CMakeFiles/Enigma.dir/src/Plugboard.cc.o"
   "Enigma.pdb"
   "Enigma"
 )

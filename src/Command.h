@@ -19,6 +19,7 @@ class Command{
             Command_Print,
             Command_Clear,
             Command_Quit,
+            Command_Set,
             Command_Invalid
         };
         //Here, the given string will be compared to the hardcoded commands and will return an Commands enum

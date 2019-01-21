@@ -7,10 +7,12 @@
 
 class RotorSystem {
     public:
-        RotorSystem(int rotorCount = 3);
+        RotorSystem(int rotorCount);
         ~RotorSystem();
         void turnRotors();
         void initRotor(int rotorIndex, int state, std::vector<int> wiring);
+        void setRotor(int rotorIndex, int state);
+        void printStatus();
     private:
         std::vector<Rotor*> m_Rotors;
 };

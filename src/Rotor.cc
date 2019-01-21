@@ -1,6 +1,6 @@
 #include "Rotor.h"
 
-Rotor::Rotor(int setting = 0){
+Rotor::Rotor(int setting){
     /*Create the rotor with the given
     setting. If no setting is passed in it will use 0 as the default*/
     this->m_State = setting;

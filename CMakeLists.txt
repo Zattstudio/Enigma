@@ -7,4 +7,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 add_executable(Enigma
     src/main.cc
     src/Command.cc
+    src/Rotor.cc
+    src/RotorSystem.cc
+    src/Plugboard.cc
 )

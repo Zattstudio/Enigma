@@ -8,7 +8,7 @@ Command::~Command(){
 }
 
 int Command::getArg(unsigned index){
-    if(index > 0 && index <= (m_Tokens.size()-1)) return std::stoi(m_Tokens.at(index));
+    if(index <= (m_Tokens.size()-1)) return std::stoi(m_Tokens.at(index+1));
     return 0;
 }
 
@@ -28,5 +28,6 @@ Command::Commands Command::getCommand(){
     if(m_Tokens.at(0) == "PR") return Command_Print;
     if(m_Tokens.at(0) == "CLEAR") return Command_Clear;
     if(m_Tokens.at(0) == "Q") return Command_Quit;
+    if(m_Tokens.at(0) == "SETR") return Command_Set;
     return Command_Invalid;
 }

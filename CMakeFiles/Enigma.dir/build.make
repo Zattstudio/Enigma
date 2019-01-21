@@ -83,19 +83,64 @@ CMakeFiles/Enigma.dir/src/Command.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Enigma.dir/src/Command.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zatt/Documents/Git/Enigma/src/Command.cc -o CMakeFiles/Enigma.dir/src/Command.cc.s
 
+CMakeFiles/Enigma.dir/src/Rotor.cc.o: CMakeFiles/Enigma.dir/flags.make
+CMakeFiles/Enigma.dir/src/Rotor.cc.o: src/Rotor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zatt/Documents/Git/Enigma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Enigma.dir/src/Rotor.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Enigma.dir/src/Rotor.cc.o -c /home/zatt/Documents/Git/Enigma/src/Rotor.cc
+
+CMakeFiles/Enigma.dir/src/Rotor.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Enigma.dir/src/Rotor.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zatt/Documents/Git/Enigma/src/Rotor.cc > CMakeFiles/Enigma.dir/src/Rotor.cc.i
+
+CMakeFiles/Enigma.dir/src/Rotor.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Enigma.dir/src/Rotor.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zatt/Documents/Git/Enigma/src/Rotor.cc -o CMakeFiles/Enigma.dir/src/Rotor.cc.s
+
+CMakeFiles/Enigma.dir/src/RotorSystem.cc.o: CMakeFiles/Enigma.dir/flags.make
+CMakeFiles/Enigma.dir/src/RotorSystem.cc.o: src/RotorSystem.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zatt/Documents/Git/Enigma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Enigma.dir/src/RotorSystem.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Enigma.dir/src/RotorSystem.cc.o -c /home/zatt/Documents/Git/Enigma/src/RotorSystem.cc
+
+CMakeFiles/Enigma.dir/src/RotorSystem.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Enigma.dir/src/RotorSystem.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zatt/Documents/Git/Enigma/src/RotorSystem.cc > CMakeFiles/Enigma.dir/src/RotorSystem.cc.i
+
+CMakeFiles/Enigma.dir/src/RotorSystem.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Enigma.dir/src/RotorSystem.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zatt/Documents/Git/Enigma/src/RotorSystem.cc -o CMakeFiles/Enigma.dir/src/RotorSystem.cc.s
+
+CMakeFiles/Enigma.dir/src/Plugboard.cc.o: CMakeFiles/Enigma.dir/flags.make
+CMakeFiles/Enigma.dir/src/Plugboard.cc.o: src/Plugboard.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zatt/Documents/Git/Enigma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Enigma.dir/src/Plugboard.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Enigma.dir/src/Plugboard.cc.o -c /home/zatt/Documents/Git/Enigma/src/Plugboard.cc
+
+CMakeFiles/Enigma.dir/src/Plugboard.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Enigma.dir/src/Plugboard.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zatt/Documents/Git/Enigma/src/Plugboard.cc > CMakeFiles/Enigma.dir/src/Plugboard.cc.i
+
+CMakeFiles/Enigma.dir/src/Plugboard.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Enigma.dir/src/Plugboard.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zatt/Documents/Git/Enigma/src/Plugboard.cc -o CMakeFiles/Enigma.dir/src/Plugboard.cc.s
+
 # Object files for target Enigma
 Enigma_OBJECTS = \
 "CMakeFiles/Enigma.dir/src/main.cc.o" \
-"CMakeFiles/Enigma.dir/src/Command.cc.o"
+"CMakeFiles/Enigma.dir/src/Command.cc.o" \
+"CMakeFiles/Enigma.dir/src/Rotor.cc.o" \
+"CMakeFiles/Enigma.dir/src/RotorSystem.cc.o" \
+"CMakeFiles/Enigma.dir/src/Plugboard.cc.o"
 
 # External object files for target Enigma
 Enigma_EXTERNAL_OBJECTS =
 
 Enigma: CMakeFiles/Enigma.dir/src/main.cc.o
 Enigma: CMakeFiles/Enigma.dir/src/Command.cc.o
+Enigma: CMakeFiles/Enigma.dir/src/Rotor.cc.o
+Enigma: CMakeFiles/Enigma.dir/src/RotorSystem.cc.o
+Enigma: CMakeFiles/Enigma.dir/src/Plugboard.cc.o
 Enigma: CMakeFiles/Enigma.dir/build.make
 Enigma: CMakeFiles/Enigma.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zatt/Documents/Git/Enigma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Enigma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zatt/Documents/Git/Enigma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Enigma"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Enigma.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

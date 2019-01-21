@@ -6,7 +6,7 @@
 
 class Rotor {
     public:
-        Rotor( int setting = 0 );
+        Rotor( int setting );
         ~Rotor();
         bool turn();
         int getState();

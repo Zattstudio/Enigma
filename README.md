@@ -23,6 +23,10 @@ $ git clone https://github.com/Zattstudio/Enigma.git
 ```console
 $ cd Enigma
 ```
+_or if you downloaded it as a zip (after extraction)_
+```console
+$ cd Enigma-master
+```
 3. Generate CMake project files
 ```console
 $ cmake .
@@ -42,9 +46,11 @@ Once you've successfully run the project, you'll be prompted with a welcome mess
 ### Commands
 |Command    |Parameters |Example    |Description|
 |---        |---        |---        |---        |
-|Insert Key |Key(letter)|**:IK** _'A'_    |This Command inserts a key into the algorithm. This is the equivalent to pressing a key on the device.
-|Quit       |-          |**:Q**     |This will Quit the program|
-|Clear      |-          |**:CLEAR** |This command will clear all your
+|Insert Key |Key(letter)|:**IK** _'A'_    |This Command inserts a key into the algorithm. This is the equivalent to pressing a key on the device.
+|Quit       |-          |:**Q**     |This will Quit the program|
+|Clear      |-          |:**CLEAR** |This command will clear all your
+|Print State|-          |:**PR**    |Print the current state/setting of the rotors|
+|Set Rotor  |rotor(0-2) state(0-25) |:**SETR** _1_ _14_|Sets the state of the selected rotor to a custom value|
 
 ### Change rotor configuration (wiring)
 

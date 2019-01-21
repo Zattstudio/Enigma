@@ -150,6 +150,87 @@ src/Command.cc.s:
 	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Command.cc.s
 .PHONY : src/Command.cc.s
 
+src/Plugboard.o: src/Plugboard.cc.o
+
+.PHONY : src/Plugboard.o
+
+# target to build an object file
+src/Plugboard.cc.o:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Plugboard.cc.o
+.PHONY : src/Plugboard.cc.o
+
+src/Plugboard.i: src/Plugboard.cc.i
+
+.PHONY : src/Plugboard.i
+
+# target to preprocess a source file
+src/Plugboard.cc.i:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Plugboard.cc.i
+.PHONY : src/Plugboard.cc.i
+
+src/Plugboard.s: src/Plugboard.cc.s
+
+.PHONY : src/Plugboard.s
+
+# target to generate assembly for a file
+src/Plugboard.cc.s:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Plugboard.cc.s
+.PHONY : src/Plugboard.cc.s
+
+src/Rotor.o: src/Rotor.cc.o
+
+.PHONY : src/Rotor.o
+
+# target to build an object file
+src/Rotor.cc.o:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Rotor.cc.o
+.PHONY : src/Rotor.cc.o
+
+src/Rotor.i: src/Rotor.cc.i
+
+.PHONY : src/Rotor.i
+
+# target to preprocess a source file
+src/Rotor.cc.i:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Rotor.cc.i
+.PHONY : src/Rotor.cc.i
+
+src/Rotor.s: src/Rotor.cc.s
+
+.PHONY : src/Rotor.s
+
+# target to generate assembly for a file
+src/Rotor.cc.s:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Rotor.cc.s
+.PHONY : src/Rotor.cc.s
+
+src/RotorSystem.o: src/RotorSystem.cc.o
+
+.PHONY : src/RotorSystem.o
+
+# target to build an object file
+src/RotorSystem.cc.o:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/RotorSystem.cc.o
+.PHONY : src/RotorSystem.cc.o
+
+src/RotorSystem.i: src/RotorSystem.cc.i
+
+.PHONY : src/RotorSystem.i
+
+# target to preprocess a source file
+src/RotorSystem.cc.i:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/RotorSystem.cc.i
+.PHONY : src/RotorSystem.cc.i
+
+src/RotorSystem.s: src/RotorSystem.cc.s
+
+.PHONY : src/RotorSystem.s
+
+# target to generate assembly for a file
+src/RotorSystem.cc.s:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/RotorSystem.cc.s
+.PHONY : src/RotorSystem.cc.s
+
 src/main.o: src/main.cc.o
 
 .PHONY : src/main.o
@@ -189,6 +270,15 @@ help:
 	@echo "... src/Command.o"
 	@echo "... src/Command.i"
 	@echo "... src/Command.s"
+	@echo "... src/Plugboard.o"
+	@echo "... src/Plugboard.i"
+	@echo "... src/Plugboard.s"
+	@echo "... src/Rotor.o"
+	@echo "... src/Rotor.i"
+	@echo "... src/Rotor.s"
+	@echo "... src/RotorSystem.o"
+	@echo "... src/RotorSystem.i"
+	@echo "... src/RotorSystem.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
