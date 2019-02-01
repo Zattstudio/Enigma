@@ -4,11 +4,21 @@
 #include "Plugboard.h"
 #include "Command.h"
 
+RotorSystem* rs;
+Command* instruction;
+
+void runLetter(){
+    char currentLetter = plugboardConvert( instruction->getArg(0) );
+    std::cout << currentLetter << std::endl;
+    rs->turnRotors();
+}
+
+
 int main(){
     bool quit = false;
     std::string result = "";
 
-    RotorSystem* rs = new RotorSystem(3);
+    rs = new RotorSystem(3);
 
 
     //Enter instruction input loop
@@ -18,7 +28,7 @@ int main(){
         getline(std::cin, input); //Get input
 
 
-        Command* instruction = new Command(input);
+        instruction = new Command(input);
         instruction->parseCommand();
 
         switch(instruction->getCommand()){
@@ -40,7 +50,7 @@ int main(){
                 break;
 
             case Command::Command_Insert_Key:
-                std::cout << instruction->getArg(0) << std::endl;
+                runLetter();
                 break;
             case Command::Command_Invalid:
             default:

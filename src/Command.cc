@@ -8,7 +8,15 @@ Command::~Command(){
 }
 
 int Command::getArg(unsigned index){
-    if(index <= (m_Tokens.size()-1)) return std::stoi(m_Tokens.at(index+1));
+    if(index <= (m_Tokens.size()-1) || m_Tokens.size() <= 1){
+
+        //Return the ascii value if IK is the command
+        //we subtract 65 because alphabetical letters in ascii start at 65
+        if(m_Tokens.at(0) == "IK") return m_Tokens.at(index+1).at(0) -65;
+
+        //Return the int value else
+        return std::stoi(m_Tokens.at(index+1));
+    }
     return 0;
 }
 

@@ -12,7 +12,10 @@ RotorSystem::~RotorSystem(){
 }
 
 void RotorSystem::turnRotors(){
-
+    bool kickNext = true;
+    for(int rotor = 0; rotor < 3 && kickNext;rotor++){
+        kickNext = m_Rotors[rotor]->turn();
+    }
 }
 
 void RotorSystem::initRotor(int rotorIndex, int state, std::vector<int> wiring){

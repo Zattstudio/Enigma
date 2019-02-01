@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/zatt/Documents/Git/Enigma/src/Command.cc
-Command.h
-/home/zatt/Documents/Git/Enigma/src/Command.h
-
 /home/zatt/Documents/Git/Enigma/src/Command.h
 vector
 -
@@ -18,6 +14,8 @@ string
 iostream
 -
 sstream
+-
+typeinfo
 -
 
 /home/zatt/Documents/Git/Enigma/src/Plugboard.h

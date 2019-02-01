@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <typeinfo>
 //This file holds the enumerated type for commands
 
 class Command{
