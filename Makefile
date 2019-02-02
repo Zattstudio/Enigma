@@ -177,6 +177,33 @@ src/Plugboard.cc.s:
 	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Plugboard.cc.s
 .PHONY : src/Plugboard.cc.s
 
+src/Reflector.o: src/Reflector.cc.o
+
+.PHONY : src/Reflector.o
+
+# target to build an object file
+src/Reflector.cc.o:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Reflector.cc.o
+.PHONY : src/Reflector.cc.o
+
+src/Reflector.i: src/Reflector.cc.i
+
+.PHONY : src/Reflector.i
+
+# target to preprocess a source file
+src/Reflector.cc.i:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Reflector.cc.i
+.PHONY : src/Reflector.cc.i
+
+src/Reflector.s: src/Reflector.cc.s
+
+.PHONY : src/Reflector.s
+
+# target to generate assembly for a file
+src/Reflector.cc.s:
+	$(MAKE) -f CMakeFiles/Enigma.dir/build.make CMakeFiles/Enigma.dir/src/Reflector.cc.s
+.PHONY : src/Reflector.cc.s
+
 src/Rotor.o: src/Rotor.cc.o
 
 .PHONY : src/Rotor.o
@@ -273,6 +300,9 @@ help:
 	@echo "... src/Plugboard.o"
 	@echo "... src/Plugboard.i"
 	@echo "... src/Plugboard.s"
+	@echo "... src/Reflector.o"
+	@echo "... src/Reflector.i"
+	@echo "... src/Reflector.s"
 	@echo "... src/Rotor.o"
 	@echo "... src/Rotor.i"
 	@echo "... src/Rotor.s"

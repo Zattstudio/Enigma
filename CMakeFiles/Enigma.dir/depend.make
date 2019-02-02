@@ -7,16 +7,23 @@ CMakeFiles/Enigma.dir/src/Command.cc.o: src/Command.h
 CMakeFiles/Enigma.dir/src/Plugboard.cc.o: src/Plugboard.cc
 CMakeFiles/Enigma.dir/src/Plugboard.cc.o: src/Plugboard.h
 
+CMakeFiles/Enigma.dir/src/Reflector.cc.o: src/Reflector.cc
+CMakeFiles/Enigma.dir/src/Reflector.cc.o: src/Reflector.h
+
 CMakeFiles/Enigma.dir/src/Rotor.cc.o: src/Rotor.cc
 CMakeFiles/Enigma.dir/src/Rotor.cc.o: src/Rotor.h
 
+CMakeFiles/Enigma.dir/src/RotorSystem.cc.o: src/Reflector.h
 CMakeFiles/Enigma.dir/src/RotorSystem.cc.o: src/Rotor.h
+CMakeFiles/Enigma.dir/src/RotorSystem.cc.o: src/RotorScramble.h
 CMakeFiles/Enigma.dir/src/RotorSystem.cc.o: src/RotorSystem.cc
 CMakeFiles/Enigma.dir/src/RotorSystem.cc.o: src/RotorSystem.h
 
 CMakeFiles/Enigma.dir/src/main.cc.o: src/Command.h
 CMakeFiles/Enigma.dir/src/main.cc.o: src/Plugboard.h
+CMakeFiles/Enigma.dir/src/main.cc.o: src/Reflector.h
 CMakeFiles/Enigma.dir/src/main.cc.o: src/Rotor.h
+CMakeFiles/Enigma.dir/src/main.cc.o: src/RotorScramble.h
 CMakeFiles/Enigma.dir/src/main.cc.o: src/RotorSystem.h
 CMakeFiles/Enigma.dir/src/main.cc.o: src/main.cc
 

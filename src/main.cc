@@ -6,19 +6,22 @@
 
 RotorSystem* rs;
 Command* instruction;
+std::string result = "";
 
-void runLetter(){
-    char currentLetter = plugboardConvert( instruction->getArg(0) );
-    std::cout << currentLetter << std::endl;
-    rs->turnRotors();
-}
+void insertKeyPress(char key){
+
+    key = plugboardConvert(key);
+    key  = rs->fullProcessLetter(key);
+    key = plugboardConvert(key);
+    result += key;
+    std::cout << "Got Letter: " << key << std::endl;
+    }
 
 
-int main(){
+int main(int argc, char *argv[]){
     bool quit = false;
-    std::string result = "";
-
-    rs = new RotorSystem(3);
+    bool selfVerbose = argv[1] == "verbose";
+    rs = new RotorSystem(3, selfVerbose);
 
 
     //Enter instruction input loop
@@ -43,6 +46,7 @@ int main(){
 
             case Command::Command_Print:
                 rs->printStatus();
+                std::cout << "Output: " << result << std::endl;
                 break;
             
             case Command::Command_Set:
@@ -50,7 +54,11 @@ int main(){
                 break;
 
             case Command::Command_Insert_Key:
-                runLetter();
+
+                //We get back an int from the getArg function
+                /*We have to convert it to a valid character before we proceed
+                with the insert function*/ 
+                insertKeyPress(instruction->getArg(0)+65);
                 break;
             case Command::Command_Invalid:
             default:

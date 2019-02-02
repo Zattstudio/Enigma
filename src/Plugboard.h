@@ -1,6 +1,6 @@
 #ifndef PLUGBOARD_H_
 #define PLUGBOARD_H_
 
-char plugboardConvert(int input);
+char plugboardConvert(char input);
 
 #endif  // PLUGBOARD_H_

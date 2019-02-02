@@ -4,6 +4,7 @@
 
 #include <vector>
 
+
 class Rotor {
     public:
         Rotor( int setting );
@@ -13,6 +14,8 @@ class Rotor {
         int getOutput(int input);
         void setState(int state);
         void setWiring(std::vector<int> newWiring);
+        int convertLetter(int letterToConvert);
+        int convertLetterReverse(int letterToConvert);
     private:    
         int m_State;
         std::vector<int> m_Wiring;

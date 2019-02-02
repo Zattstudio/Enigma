@@ -9,5 +9,6 @@ add_executable(Enigma
     src/Command.cc
     src/Rotor.cc
     src/RotorSystem.cc
+    src/Reflector.cc
     src/Plugboard.cc
 )
