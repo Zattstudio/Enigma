@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/zatt/Documents/Git/Enigma/src/Command.cc
+Command.h
+/home/zatt/Documents/Git/Enigma/src/Command.h
+
 /home/zatt/Documents/Git/Enigma/src/Command.h
 vector
 -
@@ -18,11 +22,25 @@ sstream
 typeinfo
 -
 
+/home/zatt/Documents/Git/Enigma/src/Plugboard.cc
+Plugboard.h
 /home/zatt/Documents/Git/Enigma/src/Plugboard.h
+iostream
+-
+
+/home/zatt/Documents/Git/Enigma/src/Plugboard.h
+
+/home/zatt/Documents/Git/Enigma/src/Reflector.cc
+Reflector.h
+/home/zatt/Documents/Git/Enigma/src/Reflector.h
 
 /home/zatt/Documents/Git/Enigma/src/Reflector.h
 vector
 -
+
+/home/zatt/Documents/Git/Enigma/src/Rotor.cc
+Rotor.h
+/home/zatt/Documents/Git/Enigma/src/Rotor.h
 
 /home/zatt/Documents/Git/Enigma/src/Rotor.h
 vector

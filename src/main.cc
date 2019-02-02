@@ -20,7 +20,8 @@ void insertKeyPress(char key){
 
 int main(int argc, char *argv[]){
     bool quit = false;
-    bool selfVerbose = argv[1] == "verbose";
+    bool selfVerbose = argc > 1;
+    std::cout << "Welcome to the Enigma Cipher-Machine!" << std::endl;
     rs = new RotorSystem(3, selfVerbose);
 
 
