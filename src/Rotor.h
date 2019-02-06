@@ -9,13 +9,16 @@ class Rotor {
     public:
         Rotor( int setting );
         ~Rotor();
+        enum Directions
+        {
+            Forward,
+            Backward
+        };
         bool turn();
         int getState();
-        int getOutput(int input);
         void setState(int state);
         void setWiring(std::vector<int> newWiring);
-        int convertLetter(int letterToConvert);
-        int convertLetterReverse(int letterToConvert);
+        int convertLetter(int letterToConvert, Directions direction);
     private:    
         int m_State;
         std::vector<int> m_Wiring;

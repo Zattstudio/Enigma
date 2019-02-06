@@ -13,9 +13,7 @@ Rotor::~Rotor(){
 bool Rotor::turn(){
 
     m_State += 1;
-    int first = m_Wiring[0];
-    m_Wiring.erase(m_Wiring.begin());
-    m_Wiring.push_back(first);
+
     /*If we complete one iteration of
     the rotor, we return 
     true to kick the next rotor by one step*/
@@ -33,33 +31,41 @@ int Rotor::getState(){
     return this->m_State;
 }
 
-int Rotor::getOutput(int input){
-    return this->m_Wiring.at(input);
-
-}
 
 void Rotor::setState(int state){
         this->m_State = state;
-        for(unsigned i = 0; i < state; i++){
+        /*for(unsigned i = 0; i < state; i++){
             int first = m_Wiring[0];
             m_Wiring.erase(m_Wiring.begin());
             m_Wiring.push_back(first);
-        }
+        }*/
 }
 
 void Rotor::setWiring(std::vector<int> newWiring){
     this->m_Wiring = newWiring;
 }
 
-int Rotor::convertLetter(int letterToConvert){
-    //Return shifted letter
-    return m_Wiring[letterToConvert];
-}
-int Rotor::convertLetterReverse(int letterToConvert){
-    for(unsigned i = 0; i < 26; i++){
-        if(m_Wiring.at(i) == letterToConvert){
-            return i;
-        }
+int Rotor::convertLetter(int letterToConvert, Directions direction){
+
+    if (direction == Forward){
+        //shift letter forward
+
+        //Return shifted letter
+        return m_Wiring[(letterToConvert+m_State)%26];
     }
-    return 0;
+    else {
+        for(unsigned i = 0; i < 26; i++){
+            if(m_Wiring.at(i) == letterToConvert){
+                int output = i-m_State;
+                while (output < 0){
+                    output += 26;
+                }
+                output %= 26;
+                return output;
+            }
+        }
+        return 0;
+    }
+
+
 }

@@ -40,10 +40,11 @@ void RotorSystem::printStatus(){
 }
 
 char RotorSystem::fullProcessLetter(char letter){
+
     int character = letter - 65; //convert capital letter to int
     // Iterate forwards through the rotors and convert the letter for each
     for(unsigned i = 0; i < m_Rotors.size(); i++){
-        character = m_Rotors.at(i)->convertLetter(character);
+        character = m_Rotors.at(i)->convertLetter(character, Rotor::Forward);
         //Debug logging only if set
         LOG("Rotor " + i, "returned index at: " + character);
     }
@@ -54,7 +55,7 @@ char RotorSystem::fullProcessLetter(char letter){
     LOG("Enigma", "Reflector done; now running backwards");
     //Run through the rotors backwards
     for(unsigned i = m_Rotors.size(); i > 0; i--){
-        character = m_Rotors.at(i-1)->convertLetterReverse(character);
+        character = m_Rotors.at(i-1)->convertLetter(character, Rotor::Backward);
         //Debug logging
         LOG("Rotor " + i, "returned: " + character);
     }
